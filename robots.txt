@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Block legacy WordPress CMS query parameters that cause duplicate content
+Disallow: /*?blogcategory=
+Disallow: /*?category=
+Disallow: /*?tag=
+Disallow: /*?tags=
+Disallow: /*?paged=
+Disallow: /*?page=
+Disallow: /*?p=
+Disallow: /*?cat=
+Disallow: /*?author=
+Disallow: /*?feed=
+Disallow: /*?s=
+Disallow: /*?search=
+Disallow: /*?preview=
+Disallow: /*?orderby=
+
+Sitemap: https://mayoresenformaok.es/sitemap.xml
