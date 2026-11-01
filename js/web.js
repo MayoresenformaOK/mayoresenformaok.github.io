@@ -140,6 +140,17 @@
     var v = b.getAttribute('data-cookies'); store(v); banner.setAttribute('hidden', '');
     if (v === 'granted') loadGA();
   });
+
+  // Eventos clave de contacto (01/11/2026): solo se envían si hay consentimiento (gtag cargado)
+  d.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]'); if (!a || !window.gtag) return;
+    var h = a.getAttribute('href') || '', t = (a.textContent || '').replace(/\s+/g, ' ').trim(), ev = null;
+    if (/^tel:/i.test(h)) ev = 'click_telefono';
+    else if (/wa\.me|whatsapp/i.test(h)) ev = 'click_whatsapp';
+    else if (/^mailto:/i.test(h)) ev = 'click_email';
+    else if (/Valoraci[oó]n Funcional gratuita/i.test(t)) ev = 'click_valoracion';
+    if (ev) window.gtag('event', ev, { link_text: t.slice(0, 80), page_path: location.pathname });
+  });
 })();
 
 /* Carrusel de «¿Por qué elegir…?»: una tarjeta cada vez, flechas, puntos con barra de tiempo, arrastre, teclado y pausa.
