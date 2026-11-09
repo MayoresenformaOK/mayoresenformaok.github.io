@@ -18,3 +18,5 @@ Disallow: /*?preview=
 Disallow: /*?orderby=
 
 Sitemap: https://mayoresenformaok.es/sitemap.xml
+
+Disallow: /redes/
