@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://mayoresenformaok.es/blog</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -63,6 +63,12 @@
   <url>
     <loc>https://mayoresenformaok.es/blog/prevenir-caidas-en-casa</loc>
     <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mayoresenformaok.es/blog/recuperar-autonomia-tras-ingreso-hospitalario</loc>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
