@@ -16,7 +16,7 @@ Disallow: /*?s=
 Disallow: /*?search=
 Disallow: /*?preview=
 Disallow: /*?orderby=
+# Material de redes sociales (imágenes y vídeos para Metricool): no se indexa
+Disallow: /redes/
 
 Sitemap: https://mayoresenformaok.es/sitemap.xml
-
-Disallow: /redes/
